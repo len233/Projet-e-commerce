@@ -7,7 +7,6 @@
     <title>Produit1</title>
     <link rel="stylesheet" href="../css/produit1.css">
     <script src="../src/cart.js"></script>
-    <script src="../src/render-cart.js"></script>
 </head>
 
 <body>
@@ -15,8 +14,8 @@
     <header>
         <div class="header-content">
             <div class="slogan">
-                <img src="https://img.freepik.com/vecteurs-premium/conception-icone-logo-magasin-panier-modele-vecteur-illustration-panier-achat_487414-1143.jpg"
-                    alt="Slogan en Image" class="slogan-image">
+                <a href ="../index.html">
+                    <img src="https://img.freepik.com/vecteurs-premium/conception-icone-logo-magasin-panier-modele-vecteur-illustration-panier-achat_487414-1143.jpg" alt="Slogan en Image" class="slogan-image"></a>
             </div>
 
             <div class="search-bar">
@@ -51,10 +50,8 @@
 
     <section>
         <div class="article-info">
-            <h1>Chaussettes hiver(oteil)</h1>
+            <h1>Bague Solitaire </h1>
             <p class="price">2.90€</p>
-
-            <label for="quantity">Quantité:</label>
             <button onclick="addToCart({id: '1', price: 2.90, name: 'Chaussettes hiver(oteil)'})">Ajouter au panier</button>
             <div id="cart-container"></div>
 
@@ -70,9 +67,6 @@
             <!-- Commentaires des clients -->
             <div class="comments">
                 <h2>Commentaires Clients</h2>
-                <ul id="commentsList">
-                    <!-- Les commentaires seront ajoutés dynamiquement ici avec JavaScript -->
-                </ul>
                 <textarea id="commentInput" placeholder="Ajouter un commentaire"></textarea>
                 <button onclick="addComment()">Commenter</button>
             </div>
@@ -91,7 +85,7 @@
 
             <p class="copyright">Company Name © 2023 </p>
     </footer>
-
 </body>
+
 
 </html>
